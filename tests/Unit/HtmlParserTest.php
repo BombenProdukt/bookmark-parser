@@ -21,7 +21,7 @@ it('should parse the HTML export of bookmarks', function (): void {
     </HTML>
     HTML;
 
-    $bookmarks = (new HtmlParser())->parse($content);
+    $bookmarks = (new HtmlParser($content))->parse();
 
     expect($bookmarks[0]->getName())->toBe('EXAMPLE 1');
     expect($bookmarks[1]->getName())->toBe('EXAMPLE 3');

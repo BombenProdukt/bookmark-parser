@@ -8,14 +8,19 @@ use Carbon\CarbonImmutable;
 
 final readonly class GoogleChromeParser implements ParserInterface
 {
+    public function __construct(private readonly string $content)
+    {
+        //
+    }
+
     /**
      * @throws \JsonException
      *
      * @return array<int, Bookmark>
      */
-    public function parse(string $content): array
+    public function parse(): array
     {
-        $roots = \json_decode($content, true, \JSON_THROW_ON_ERROR)['roots'];
+        $roots = \json_decode($this->content, true, \JSON_THROW_ON_ERROR)['roots'];
         $bookmarks = [];
 
         foreach ($roots as $root) {

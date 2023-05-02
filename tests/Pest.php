@@ -52,3 +52,5 @@ function something(): void
 {
     // ..
 }
+
+registerSpatiePestHelpers();

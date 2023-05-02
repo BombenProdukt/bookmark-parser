@@ -9,12 +9,17 @@ use Symfony\Component\DomCrawler\Crawler;
 
 final readonly class HtmlParser implements ParserInterface
 {
+    public function __construct(private readonly string $content)
+    {
+        //
+    }
+
     /**
      * @return array<int, Bookmark>
      */
-    public function parse(string $content): array
+    public function parse(): array
     {
-        return (new Crawler($content))
+        return (new Crawler($this->content))
             ->filter('a[ADD_DATE]')
             ->each(fn (Crawler $linkNode): Bookmark => new Bookmark(
                 name: $linkNode->innerText(),

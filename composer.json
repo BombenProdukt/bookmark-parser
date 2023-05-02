@@ -17,8 +17,10 @@
     "homepage": "https://github.com/BombenProdukt/bookmark-parser",
     "require": {
         "php": "^8.2",
+        "bombenprodukt/laravel-package-powerpack": "^1.0",
         "illuminate/contracts": "^10.0",
-        "bombenprodukt/laravel-package-powerpack": "^1.0"
+        "nesbot/carbon": "^2.66",
+        "symfony/dom-crawler": "^6.2"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.2",

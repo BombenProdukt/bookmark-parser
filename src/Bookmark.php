@@ -17,6 +17,21 @@ final readonly class Bookmark implements JsonSerializable
         //
     }
 
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function getLink(): string
+    {
+        return $this->link;
+    }
+
+    public function getDate(): CarbonImmutable
+    {
+        return $this->date;
+    }
+
     public function toArray(): array
     {
         return [

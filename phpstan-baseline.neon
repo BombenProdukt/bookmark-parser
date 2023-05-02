@@ -1,6 +1,11 @@
 parameters:
 	ignoreErrors:
 		-
+			message: "#^Cannot call method fetchArray\\(\\) on SQLite3Result\\|false\\.$#"
+			count: 1
+			path: src/FirefoxParser.php
+
+		-
 			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
 			count: 1
 			path: src/GoogleChromeParser.php

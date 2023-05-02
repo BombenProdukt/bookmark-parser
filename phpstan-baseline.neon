@@ -29,3 +29,8 @@ parameters:
 			message: "#^Parameter \\$link of class BombenProdukt\\\\BookmarkParser\\\\Bookmark constructor expects string, string\\|null given\\.$#"
 			count: 1
 			path: src/HtmlParser.php
+
+		-
+			message: "#^Parameter \\$link of class BombenProdukt\\\\BookmarkParser\\\\Bookmark constructor expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/SafariParser.php

@@ -14,7 +14,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/BombenProdukt/bookmark-parser",
+    "homepage": "https://github.com/faustbrian/bookmark-parser",
     "require": {
         "php": "^8.2",
         "bombenprodukt/laravel-package-powerpack": "^1.0",

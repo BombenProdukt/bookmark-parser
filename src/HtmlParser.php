@@ -25,6 +25,7 @@ final readonly class HtmlParser implements ParserInterface
                 name: $linkNode->innerText(),
                 link: $linkNode->attr('href'),
                 date: CarbonImmutable::createFromTimestamp($linkNode->attr('add_date')),
+                base64Icon: $linkNode->attr('icon'),
             ));
     }
 }

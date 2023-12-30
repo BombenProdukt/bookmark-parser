@@ -37,6 +37,7 @@ final readonly class GoogleChromeParser implements ParserInterface
                 name: $node['name'],
                 link: $node['url'],
                 date: CarbonImmutable::createFromDate(1601, 1, 1, 'UTC')->addSeconds($node['date_added'] / 1000000),
+                base64Icon: null,
             );
         }
 

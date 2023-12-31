@@ -29,6 +29,7 @@ final readonly class FirefoxParser implements ParserInterface
                 name: $row['title'] ?? '',
                 link: $row['url'],
                 date: CarbonImmutable::createFromTimestamp($row['dateAdded'] / 1000000),
+                base64Icon: null,
             );
         }
 

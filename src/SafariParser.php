@@ -27,6 +27,7 @@ final readonly class SafariParser implements ParserInterface
                 name: $linkNode->innerText(),
                 link: $linkNode->attr('href'),
                 date: $date,
+                base64Icon: null,
             ));
     }
 }

@@ -13,6 +13,7 @@ final readonly class Bookmark implements JsonSerializable
         private string $name,
         private string $link,
         private CarbonImmutable $date,
+        private ?string $base64Icon,
     ) {
         //
     }
@@ -30,6 +31,11 @@ final readonly class Bookmark implements JsonSerializable
     public function getDate(): CarbonImmutable
     {
         return $this->date;
+    }
+
+    public function getBase64Icon(): string
+    {
+        return $this->base64Icon;
     }
 
     public function toArray(): array
